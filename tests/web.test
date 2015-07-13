@@ -1,10 +1,21 @@
+@@ Set
+  domain  file:///home/claudia/htdocs/galen-test/website/index.html
+  gridUrl http://localhost:4444/wd/hub
+
+@@ Table browsers
+  | browser            | browserName          |
+  | firefox            | Firefox              |
+  | chrome             | Chrome               |
+  #| internet explorer | Internet Explorer 11 |
+
 @@ table devices
   | device    | size     |
   | mobile    | 500x700  |
   | tablet    | 900x600  |
   | desktop   | 1300x700 |
 
-@@ parameterized using devices
-Web test on ${device} device
-  ${websiteUrl} ${size}
+@@ Parameterized using devices
+@@ Parameterized using browsers
+Web test on ${device} device in ${browserName}
+  selenium grid ${gridUrl} --browser "${browser}" --page ${websiteUrl} --size ${size}
     check specs/web.spec --include "${device}"
