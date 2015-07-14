@@ -5,8 +5,8 @@
 @@ Table browsers
   | browser            | browserName          |
   | firefox            | Firefox              |
-  | chrome             | Chrome               |
-  #| internet explorer | Internet Explorer 11 |
+  #| chrome             | Chrome               |
+  | internet explorer  | Internet Explorer 8  |
 
 @@ table devices
   | device    | size     |

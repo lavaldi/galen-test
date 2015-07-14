@@ -1,0 +1,32 @@
+{
+	"_comment": "File for test in IE with Linux as node.",
+	"class":"org.openqa.grid.common.RegistrationRequest",
+	"capabilities":
+		[		  
+		  { 
+		    "seleniumProtocol": "WebDriver", 
+		    "browserName": "internet explorer",
+		    "version": "8", // Change it to your version.
+		    "maxInstances": 1,
+		    "platform": "WINDOWS"
+		  }
+	  ],
+	  
+    "configuration":
+      {
+        	"nodeTimeout":120,
+        	"port":5555,
+
+	        "hubPort":4444,
+	        "hubHost":"127.0.0.1",
+	
+	        "nodePolling":2000,
+	
+	        "registerCycle":10000,
+	        "register":true,
+	        "cleanUpCycle":2000,
+	        "maxSession":2,
+
+            "newSessionWaitTimeout":60000
+      }
+}
